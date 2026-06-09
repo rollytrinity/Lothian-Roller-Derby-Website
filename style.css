@@ -1939,3 +1939,137 @@ video {
         font-size: 1.75rem;
     }
 }
+
+html, body {
+  overflow-x: hidden;
+}
+
+img, iframe, video, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+iframe {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* ========== TABLETS (≤768px) ========== */
+@media (max-width: 768px) {
+
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .navigation {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .cta-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-bottom-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feed-head {
+    flex-wrap: wrap;
+  }
+
+  .instagram-widget-container {
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* ========== PHONES (≤480px) ========== */
+@media (max-width: 480px) {
+
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .navigation {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .navigation-link,
+  .navigation-button {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.8rem;
+  }
+
+  .logo-link img,
+  #idz0qp,
+  #ijs20z {
+    width: 60px;
+    height: 60px;
+  }
+
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .feed-head {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .feed-profile,
+  .feed-link,
+  .feed-action {
+    width: 100%;
+  }
+
+  .feed-link {
+    justify-content: center;
+  }
+
+  .feed-footer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .instagram-widget-container {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .contact-form {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .cta-actions {
+    width: 100%;
+  }
+
+  .cta-primary-button,
+  .cta-secondary-button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-banner,
+  .hero-slider {
+    height: 300px;
+  }
+
+  .social-title,
+  .content-title {
+    font-size: 1.5rem;
+  }
+}
